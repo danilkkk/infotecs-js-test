@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/table-favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Тестовое задание</title>
+</head>
+
+<body> 
+
+    <section class="main">
+
+        <div class="main__table-container">
+            <table class="main__table-container__table">
+                <thead class="main__table-container__table__header">
+                    <!-- <tr class="main__table-container__table__header__row">
+                        <th class="main__table-container__table__header__row__col" title="Сортировать по имени" data-type="firstName" ><div><span
+                                class="main__table-container__table__header__row__col__text" >Имя</span><img
+                                class="sort-arrow" src="img/arrow-down-sign-to-navigate.png" alt="arrow"
+                                ></div></th>
+                        <th class="main__table-container__table__header__row__col" title="Сортировать по фамилии" data-type="lastName" ><div><span
+                            class="main__table-container__table__header__row__col__text">Фамилия</span><img
+                            class="sort-arrow" src="img/arrow-down-sign-to-navigate.png" alt="arrow"
+                            ></div></th>
+                        <th class="main__table-container__table__header__row__col" title="Сортировать по описанию" data-type="about"><div><span
+                            class="main__table-container__table__header__row__col__text">Описание</span><img
+                            class="sort-arrow" src="img/arrow-down-sign-to-navigate.png" alt="arrow"
+                            ></div></th>
+                        <th class="main__table-container__table__header__row__col" title="Сортировать по цвету глаз" data-type="eyeColor"><div><span
+                            class="main__table-container__table__header__row__col__text">Цвет глаз</span><img
+                            class="sort-arrow" src="img/arrow-down-sign-to-navigate.png" alt="arrow"
+                            ></div></th>
+                    </tr> -->
+                </thead>
+
+                <tbody class="main__table-container__table__body">  
+                    <!-- <tr class="main__table-container__table__body__row">
+                        <td class="first-name main__table-container__table__body__row__col">Имя</td>
+                        <td class="last-name main__table-container__table__body__row__col">Фамилия</td>
+                        <td class="about main__table-container__table__body__row__col">Описание</td>
+                        <td class="eyeColor main__table-container__table__body__row__col">
+                            <div class="color-container">
+                                <div class="color-container__color-ray" data-color="red"></div>
+                            </div>
+                        </td>
+                    </tr>                -->
+                </tbody>
+                <tfoot class="main__table-container__table__footer">
+                    <!-- <tr class="main__table-container__table__footer__row">
+                        <td class="first-name main__table-container__table__footer__row__col">Скрыть</td>
+                        <td class="last-name main__table-container__table__footer__row__col">Скрыть</td>
+                        <td class="about main__table-container__table__footer__row__col">Скрыть</td>
+                        <td class="eyeColor main__table-container__table__footer__row__col">Скрыть</td>
+                    </tr> -->
+                </tfoot>
+            </table>
+        </div>
+        <div class="main__form-container hidden display-none opacity-none">
+            <div class="main__form-container__form-wrapper">
+                <div class="main__form-container__form-wrapper__header">
+                    <p class="main__form-container__form-wrapper__header__heading">Редактировать</p>
+                    <button class="main__form-container__form-wrapper__header__btn-close"><img src="img/close.png"
+                            alt="close" title="Закрыть"
+                            class="main__form-container__form-wrapper__form__header__btn-close__img"></button>
+                </div>
+                <form class="main__form-container__form-wrapper__form" id="edit-form" autocomplete="off">
+
+                    <div class="main__form-container__form-wrapper__form__input-wrapper">
+                        <label for="form-firstname"
+                            class="main__form-container__form-wrapper__form__input-wrapper__label">Имя</label>
+                        <input type="text" id="form-firstname" placeholder="Введите имя..."
+                            class="main__form-container__form-wrapper__form__input-wrapper__input">
+                    </div>
+
+                    <div class="main__form-container__form-wrapper__form__input-wrapper">
+                        <label for="form-lastname"
+                            class="main__form-container__form-wrapper__form__input-wrapper__label">Фамилия</label>
+                        <input type="text" id="form-lastname" placeholder="Введите имя..."
+                            class="main__form-container__form-wrapper__form__input-wrapper__input">
+                    </div>
+
+                    <div class="main__form-container__form-wrapper__form__input-wrapper">
+                        <label for="form-eyecolor"
+                            class="main__form-container__form-wrapper__form__input-wrapper__label">Цвет глаз</label>
+                        <input type="text" id="form-eyecolor" placeholder="Введите имя..."
+                            class="main__form-container__form-wrapper__form__input-wrapper__input">
+                    </div>
+
+                    <div class="main__form-container__form-wrapper__form__input-wrapper">
+                        <label for="form-about"
+                            class="main__form-container__form-wrapper__form__input-wrapper__label">Описание</label>
+                        <textarea type="text" id="form-about" placeholder="Введите имя..."
+                            class="main__form-container__form-wrapper__form__input-wrapper__input"></textarea>
+                    </div>                    
+
+                    <button class="main__form-container__form-wrapper__form__btn-save" type="submit">Сохранить</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="main__pagination-container">       
+          <!-- <div class="main__pagination-container__number pagination-arrow pagination-disabled">
+                <svg width="18" height="18">
+                    <use xlink:href="#left" />
+                </svg>
+            </div>
+
+            <div class="main__pagination-container__number">
+                1
+            </div>
+            <div class="main__pagination-container__number">
+                2
+            </div>
+
+            <div class="main__pagination-container__number pagination-current">
+                3
+            </div>
+
+            <div class="main__pagination-container__number">
+                4
+            </div>
+
+            <div class="main__pagination-container__number">
+                5
+            </div>
+
+            <div class="main__pagination-container__number pagination-arrow">
+                <svg width="18" height="18">
+                    <use xlink:href="#right" />
+                </svg>
+            </div> -->
+        </div>
+    </section>
+
+    <footer class="footer">
+
+        <div class="footer__links-container">
+            <a class="footer__contacts-link light-hover " href="https://github.com/danilkkk">
+                <img class="footer__contacts-link__logo" src="img/GitHub-Mark-Light-32px.png" alt="GitHub"
+                    title="Мой GitHub">
+            </a>
+
+            <a class="footer__contacts-link light-hover"
+                href="https://spb.hh.ru/resume/1041b6c6ff08ac2b580039ed1f6448587a4531">
+                <img class="footer__contacts-link__logo" src="img/min-hh-white.png" alt="hh.ru"
+                    title="Моё резюме на hh.ru">
+            </a>
+
+            <a class="footer__contacts-link light-hover" href="/">
+                <img class="footer__contacts-link__logo" style="background-color: white; border-radius: 50%;"
+                    src="img/telegram.png" alt="Telegram" title="Мой tg">
+            </a>
+        </div>
+
+        <p class="footer__text contact-mail">&#128386; wrong.mail.address@mail.com</p>
+
+
+    </footer>   
+
+    <svg class="hide">
+        <symbol id="left" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+        </symbol>
+        <symbol id="right" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+        </symbol>
+    </svg>
+
+    <script src="js/json-data.js"></script>
+    <script src="js/view.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
